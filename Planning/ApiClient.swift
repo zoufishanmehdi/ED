@@ -7,7 +7,18 @@
 
 import UIKit
 
-// Api
+// Main Module
+
+extension ApiClient {
+    func login(completion: (LoggedInUser) -> Void) {}
+}
+
+extension ApiClient {
+    func loadFeed(completion: (FeedItem) -> Void) {}
+}
+
+
+// Api Module
 
 class ApiClient {
     static let shared = ApiClient()
@@ -19,16 +30,12 @@ class ApiClient {
 
 struct LoggedInUser {}
 
-extension ApiClient {
-    func login(completion: (LoggedInUser) -> Void) {}
-}
-
 class LoginViewController: UIViewController {
-    var api = ApiClient.shared
+    var login: (((LoggedInUser) -> Void) -> Void)?
     
-    func didTapLoginButton() {
-        api.login() { user in
-            // show next screen
+    override func viewDidLoad() {
+        login? { user in
+            // show feed screen
         }
     }
 }
@@ -37,15 +44,11 @@ class LoginViewController: UIViewController {
 
 struct FeedItem {}
 
-extension ApiClient {
-    func loadFeed(completion: (FeedItem) -> Void) {}
-}
-
 class FeedViewController: UIViewController {
-    var api = ApiClient.shared
+    var loadFeed: ((([FeedItem]) -> Void) -> Void)?
     
-    func didTapLoginButton() {
-        api.loadFeed() { loadedItems in
+    override func viewDidLoad() {
+        loadFeed? { loadedItems in
             // update UI
         }
     }
