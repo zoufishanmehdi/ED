@@ -7,21 +7,21 @@
 
 import UIKit
 
-struct LoggedInUser {}
-struct FeedItem {}
+// Api
 
 class ApiClient {
     static let shared = ApiClient()
     
-    func login(completion: (LoggedInUser) -> Void) {}
-    func loadFeed(completion: ([FeedItem]) -> Void) {}
+    func execute(_: URLRequest, completion: (Data) -> Void) {}
 }
 
-//let client = ApiClient.instance
+// Login Module
 
-class MockApiClient: ApiClient {}
+struct LoggedInUser {}
 
-//ApiClient.instance = MockApiClient
+extension ApiClient {
+    func login(completion: (LoggedInUser) -> Void) {}
+}
 
 class LoginViewController: UIViewController {
     var api = ApiClient.shared
@@ -33,12 +33,19 @@ class LoginViewController: UIViewController {
     }
 }
 
+//Feed Module
+
+struct FeedItem {}
+
+extension ApiClient {
+    func loadFeed(completion: (FeedItem) -> Void) {}
+}
 
 class FeedViewController: UIViewController {
     var api = ApiClient.shared
     
     func didTapLoginButton() {
-        api.loadFeed() { user in
+        api.loadFeed() { loadedItems in
             // update UI
         }
     }
