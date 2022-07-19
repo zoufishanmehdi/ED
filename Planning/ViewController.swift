@@ -11,32 +11,39 @@ protocol FeedLoader {
     func loadFeed(completion: @escaping ([String]) -> Void)
 }
 
-struct Reachability {
-    static let networkAvailable = false
-}
-
 class FeedViewController: UIViewController {
-    var remote: RemoteFeedLoader!
-    var local: LocalFeedLoader!
+    var loader: FeedLoader!
     
     convenience init(loader: FeedLoader) {
         self.init()
-        self.remote = remote
-        self.local = local
+        self.loader = loader
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if Reachability.networkAvailable {
-            remote.loadFeed { loadedItems in
-                
-            }
-        } else {
-            local.loadFeed { loadedItems in
-                
-            }
+        loader.loadFeed { loadedItems in
+            // update UI
         }
+    }
+}
+
+struct Reachability {
+    static let networkAvailable = false
+}
+
+class RemoteWithLocalFallbackFeedLoader: FeedLoader {
+    let remote: RemoteFeedLoader
+    let local: LocalFeedLoader
+    
+    init(remote: RemoteFeedLoader, local: LocalFeedLoader) {
+        self.remote = remote
+        self.local = local
+    }
+    
+    func loadFeed(completion: @escaping ([String]) -> Void) {
+        let load = Reachability.networkAvailable ? remote.loadFeed : local.loadFeed
+        load(completion)
     }
 }
 
@@ -52,14 +59,8 @@ class LocalFeedLoader: FeedLoader {
     }
 }
 
-
-class ViewController: UIViewController {
-//testing again
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
-}
-
+let vc = FeedViewController(loader: RemoteFeedLoader())
+let vc2 = FeedViewController(loader: LocalFeedLoader())
+let vc3 = FeedViewController(loader: RemoteWithLocalFallbackFeedLoader(
+    remote: RemoteFeedLoader(),
+    local: LocalFeedLoader()))
