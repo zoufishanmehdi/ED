@@ -13,6 +13,7 @@
 		C79AF023287F7508000672B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79AF021287F7508000672B0 /* Main.storyboard */; };
 		C79AF025287F750B000672B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79AF024287F750B000672B0 /* Assets.xcassets */; };
 		C79AF028287F750B000672B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79AF026287F750B000672B0 /* LaunchScreen.storyboard */; };
+		C79AF030288077BC000672B0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79AF02F288077BC000672B0 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C79AF024287F750B000672B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C79AF027287F750B000672B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C79AF029287F750B000672B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79AF02F288077BC000672B0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C79AF01B287F7508000672B0 /* AppDelegate.swift */,
 				C79AF01D287F7508000672B0 /* SceneDelegate.swift */,
 				C79AF01F287F7508000672B0 /* ViewController.swift */,
+				C79AF02F288077BC000672B0 /* ApiClient.swift */,
 				C79AF021287F7508000672B0 /* Main.storyboard */,
 				C79AF024287F750B000672B0 /* Assets.xcassets */,
 				C79AF026287F750B000672B0 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				C79AF020287F7508000672B0 /* ViewController.swift in Sources */,
 				C79AF01C287F7508000672B0 /* AppDelegate.swift in Sources */,
 				C79AF01E287F7508000672B0 /* SceneDelegate.swift in Sources */,
+				C79AF030288077BC000672B0 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
