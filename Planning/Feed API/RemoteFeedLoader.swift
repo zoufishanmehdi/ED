@@ -7,21 +7,26 @@
 
 import Foundation
 
-protocol HTTPClient {
-    func get(from url: URL)
+public protocol HTTPClient {
+    func get(from url: URL, completion: @escaping (Error) -> Void)
 }
 
-class RemoteFeedLoader {
-    let client: HTTPClient
+public final class RemoteFeedLoader {
     let url: URL
+    let client: HTTPClient
     
-    init(url: URL, client: HTTPClient) {
+    public enum Error: Swift.Error {
+        case connectivity
+    }
+    
+    public init(url: URL, client: HTTPClient) {
         self.url = url
         self.client = client
     }
     
-    func load() {
-        client.get(from: url)
-        client.get(from: url)
+    public func load(completion: @escaping (Error) -> Void = { _ in }) {
+        client.get(from: url) { error in
+            completion(.connectivity)
+        }
     }
 }
