@@ -22,5 +22,6 @@ class RemoteFeedLoader {
     
     func load() {
         client.get(from: url)
+        client.get(from: url)
     }
 }
