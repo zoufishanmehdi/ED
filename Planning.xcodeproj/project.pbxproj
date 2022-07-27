@@ -117,9 +117,17 @@
 			isa = PBXGroup;
 			children = (
 				C725FD1E288F018800BA4D5B /* PlanningTests.swift */,
-				C725FD05288EE3FC00BA4D5B /* RemoteFeedLoaderTests.swift */,
+				C725FD2A2891DA1700BA4D5B /* Feed API */,
 			);
 			path = PlanningTests;
+			sourceTree = "<group>";
+		};
+		C725FD2A2891DA1700BA4D5B /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				C725FD05288EE3FC00BA4D5B /* RemoteFeedLoaderTests.swift */,
+			);
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 		C79AF00F287F7508000672B0 = {
