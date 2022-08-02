@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Planning
 
 class EssentialFeedAPIEndToEndTests: XCTestCase {
 
