@@ -19,6 +19,7 @@
 		C725FD302898512E00BA4D5B /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD2F2898512E00BA4D5B /* XCTestCase+MemoryLeakTracking.swift */; };
 		C725FD3228996A1F00BA4D5B /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD3128996A1F00BA4D5B /* URLSessionHTTPClient.swift */; };
 		C725FD3E2899725700BA4D5B /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD3D2899725700BA4D5B /* EssentialFeedAPIEndToEndTests.swift */; };
+		C725FD4428997A5E00BA4D5B /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD2F2898512E00BA4D5B /* XCTestCase+MemoryLeakTracking.swift */; };
 		C79AF01C287F7508000672B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79AF01B287F7508000672B0 /* AppDelegate.swift */; };
 		C79AF01E287F7508000672B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79AF01D287F7508000672B0 /* SceneDelegate.swift */; };
 		C79AF020287F7508000672B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79AF01F287F7508000672B0 /* ViewController.swift */; };
@@ -391,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C725FD3E2899725700BA4D5B /* EssentialFeedAPIEndToEndTests.swift in Sources */,
+				C725FD4428997A5E00BA4D5B /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
