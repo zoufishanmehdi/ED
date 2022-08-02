@@ -66,7 +66,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         })
     }
     
-    func test_load_deliversNoItemsOn200HTTPResponseW githEmptyJSONList() {
+    func test_load_deliversNoItemsOn200HTTPResponseWGithEmptyJSONList() {
         let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWith: .success([]), when: {
