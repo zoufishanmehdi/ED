@@ -144,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				C725FD1E288F018800BA4D5B /* PlanningTests.swift */,
-				C725FD2A2891DA1700BA4D5B /* Feed API */,
 			);
 			path = PlanningTests;
 			sourceTree = "<group>";
@@ -154,7 +153,6 @@
 			children = (
 				C725FD2B289310DD00BA4D5B /* URLSessionHTTPClient.swift */,
 				C725FD05288EE3FC00BA4D5B /* LoadFeedFromRemoteUseCaseTests.swift */,
-				C725FD2E2898510500BA4D5B /* Helpers */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -180,7 +178,9 @@
 			children = (
 				C79AF01A287F7508000672B0 /* Planning */,
 				C725FD0C288EE4F700BA4D5B /* EssentialFeedTests */,
+				C725FD2E2898510500BA4D5B /* Helpers */,
 				C7E0094228A55C1F005C9780 /* Feed Cache */,
+				C725FD2A2891DA1700BA4D5B /* Feed API */,
 				C725FD1D288F018800BA4D5B /* PlanningTests */,
 				C725FD3C2899725700BA4D5B /* EssentialFeedAPIEndToEndTests */,
 				C79AF019287F7508000672B0 /* Products */,
