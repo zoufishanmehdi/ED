@@ -26,6 +26,7 @@
 		C79AF023287F7508000672B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79AF021287F7508000672B0 /* Main.storyboard */; };
 		C79AF025287F750B000672B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79AF024287F750B000672B0 /* Assets.xcassets */; };
 		C79AF028287F750B000672B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79AF026287F750B000672B0 /* LaunchScreen.storyboard */; };
+		C7E0094428A55C53005C9780 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0094328A55C53005C9780 /* CacheFeedUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		C79AF024287F750B000672B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C79AF027287F750B000672B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C79AF029287F750B000672B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7E0094328A55C53005C9780 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				C79AF01A287F7508000672B0 /* Planning */,
 				C725FD0C288EE4F700BA4D5B /* EssentialFeedTests */,
+				C7E0094228A55C1F005C9780 /* Feed Cache */,
 				C725FD1D288F018800BA4D5B /* PlanningTests */,
 				C725FD3C2899725700BA4D5B /* EssentialFeedAPIEndToEndTests */,
 				C79AF019287F7508000672B0 /* Products */,
@@ -209,6 +212,14 @@
 				C79AF029287F750B000672B0 /* Info.plist */,
 			);
 			path = Planning;
+			sourceTree = "<group>";
+		};
+		C7E0094228A55C1F005C9780 /* Feed Cache */ = {
+			isa = PBXGroup;
+			children = (
+				C7E0094328A55C53005C9780 /* CacheFeedUseCaseTests.swift */,
+			);
+			path = "Feed Cache";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E0094428A55C53005C9780 /* CacheFeedUseCaseTests.swift in Sources */,
 				C725FD0E288EE4F700BA4D5B /* EssentialFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
