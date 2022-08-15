@@ -28,6 +28,7 @@
 		C79AF028287F750B000672B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79AF026287F750B000672B0 /* LaunchScreen.storyboard */; };
 		C7E0094428A55C53005C9780 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0094328A55C53005C9780 /* CacheFeedUseCaseTests.swift */; };
 		C7E0094628AA9CD1005C9780 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0094528AA9CD1005C9780 /* LocalFeedLoader.swift */; };
+		C7E0094828AA9D6C005C9780 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0094728AA9D6C005C9780 /* FeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		C79AF029287F750B000672B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E0094328A55C53005C9780 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		C7E0094528AA9CD1005C9780 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
+		C7E0094728AA9D6C005C9780 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 			children = (
 				C7E0094328A55C53005C9780 /* CacheFeedUseCaseTests.swift */,
 				C7E0094528AA9CD1005C9780 /* LocalFeedLoader.swift */,
+				C7E0094728AA9D6C005C9780 /* FeedStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				C7E0094628AA9CD1005C9780 /* LocalFeedLoader.swift in Sources */,
 				C7E0094428A55C53005C9780 /* CacheFeedUseCaseTests.swift in Sources */,
 				C725FD0E288EE4F700BA4D5B /* EssentialFeedTests.swift in Sources */,
+				C7E0094828AA9D6C005C9780 /* FeedStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
