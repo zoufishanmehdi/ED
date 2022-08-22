@@ -30,6 +30,7 @@
 		C7E0094628AA9CD1005C9780 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0094528AA9CD1005C9780 /* LocalFeedLoader.swift */; };
 		C7E0094828AA9D6C005C9780 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0094728AA9D6C005C9780 /* FeedStore.swift */; };
 		C7E0094A28B4284D005C9780 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0094928B4284D005C9780 /* RemoteFeedItem.swift */; };
+		C7E0094C28B428C6005C9780 /* LocalFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0094B28B428C6005C9780 /* LocalFeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		C7E0094528AA9CD1005C9780 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		C7E0094728AA9D6C005C9780 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		C7E0094928B4284D005C9780 /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
+		C7E0094B28B428C6005C9780 /* LocalFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				C7E0094328A55C53005C9780 /* CacheFeedUseCaseTests.swift */,
 				C7E0094528AA9CD1005C9780 /* LocalFeedLoader.swift */,
 				C7E0094728AA9D6C005C9780 /* FeedStore.swift */,
+				C7E0094B28B428C6005C9780 /* LocalFeedItem.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E0094C28B428C6005C9780 /* LocalFeedItem.swift in Sources */,
 				C725FD01288C909B00BA4D5B /* FeedItem.swift in Sources */,
 				C79AF020287F7508000672B0 /* ViewController.swift in Sources */,
 				C79AF01C287F7508000672B0 /* AppDelegate.swift in Sources */,
