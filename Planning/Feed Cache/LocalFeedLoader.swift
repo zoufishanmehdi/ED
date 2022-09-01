@@ -14,7 +14,7 @@ public final class LocalFeedLoader {
     
     public typealias SaveResult = Error?
     public typealias LoadResult = LoadFeedResult
-
+    
     public init(store: FeedStore, currentDate: @escaping () -> Date) {
         self.store = store
         self.currentDate = currentDate
@@ -31,9 +31,7 @@ public final class LocalFeedLoader {
                 completion(.success(feed.toModels()))
                 
             case .found:
-                self.store.deleteCachedFeed { _ in
-                    completion(.success([]))
-                }
+                completion(.success([]))
             case .empty:
                 completion(.success([]))
             }
@@ -45,7 +43,10 @@ public final class LocalFeedLoader {
             switch result {
             case .failure:
                 self.store.deleteCachedFeed { _ in }
-            default: break
+            case let .found(_, timestamp) where !self.validate(timestamp):
+                self.store.deleteCachedFeed { _ in }
+                
+            case .empty, .found: break
             }
         }
     }
@@ -60,11 +61,11 @@ public final class LocalFeedLoader {
         }
         return currentDate() < maxCacheAge
     }
-
+    
     public func save(_ feed: [FeedImage], completion: @escaping (SaveResult?) -> Void) {
         store.deleteCachedFeed { [weak self] error in
             guard let self = self else { return }
-
+            
             if let cacheDeletionError = error {
                 completion(cacheDeletionError)
             } else {
@@ -76,11 +77,11 @@ public final class LocalFeedLoader {
     public func load(completion: @escaping (Error?) -> Void) {
         store.retrieve(completion: completion)
     }
-
+    
     private func cache(_ feed: [FeedImage], with completion: @escaping (SaveResult?) -> Void) {
-            store.insert(feed.toLocal(), timestamp: currentDate()) { [weak self] error in
+        store.insert(feed.toLocal(), timestamp: currentDate()) { [weak self] error in
             guard self != nil else { return }
-
+            
             completion(error)
         }
     }
