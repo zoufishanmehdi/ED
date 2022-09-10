@@ -73,7 +73,7 @@ class CodableFeedStoreTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
         
-        setupEmptyStoreState()
+        undoStoreSideEffects()
     }
     
     func test_retrieve_deliversEmptyOnEmptyCache() {
