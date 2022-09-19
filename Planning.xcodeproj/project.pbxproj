@@ -289,8 +289,8 @@
 			children = (
 				C7C0E1D428D4E09D00F0C4B0 /* CoreDataFeedStore.swift */,
 				C7C0E1DD28D8F8A100F0C4B0 /* CoreDataHelpers.swift */,
-				C7C0E1E228D8F97700F0C4B0 /* ManagedFeedImage.swift */,
 				C7C0E1E028D8F96000F0C4B0 /* ManagedCache.swift */,
+				C7C0E1E228D8F97700F0C4B0 /* ManagedFeedImage.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
