@@ -246,6 +246,7 @@
 				C79AF01B287F7508000672B0 /* AppDelegate.swift */,
 				C79AF01D287F7508000672B0 /* SceneDelegate.swift */,
 				C79AF01F287F7508000672B0 /* ViewController.swift */,
+				C7C0E1DC28D8F7FF00F0C4B0 /* Infrastructure */,
 				C7E0094228A55C1F005C9780 /* Feed Cache */,
 				C725FD04288C92DA00BA4D5B /* Feed Feature */,
 				C725FD15288EFFF700BA4D5B /* Feed API */,
@@ -267,6 +268,14 @@
 				C7C0E1CD28D22DAB00F0C4B0 /* XCTestCase+FailableInsertFeedStoreSpecs.swift */,
 			);
 			path = FeedStoreSpecs;
+			sourceTree = "<group>";
+		};
+		C7C0E1DC28D8F7FF00F0C4B0 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C7C0E1D428D4E09D00F0C4B0 /* CoreDataFeedStore.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		C7D278A828B67FF10037BC12 /* Feed Cache */ = {
@@ -301,7 +310,6 @@
 				C7E0094B28B428C6005C9780 /* LocalFeedImage.swift */,
 				C70F428A28C79F7900B42573 /* FeedCachePolicy.swift */,
 				C7C0E1C528D13B6000F0C4B0 /* CodableFeedStore.swift */,
-				C7C0E1D428D4E09D00F0C4B0 /* CoreDataFeedStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
