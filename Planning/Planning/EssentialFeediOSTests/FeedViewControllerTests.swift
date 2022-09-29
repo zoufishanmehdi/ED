@@ -10,7 +10,7 @@ import UIKit
 import Planning
 
 final class FeedViewController: UIViewController {
-    private var loader: FeedViewControllerTests.LoaderSpy?
+    private var loader: FeedLoader?
     
     convenience init(loader: FeedLoader) {
         self.init()
@@ -19,6 +19,7 @@ final class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loader?.load { _ in }
     }
 }
@@ -45,7 +46,7 @@ final class FeedViewControllerTests: XCTestCase {
     class LoaderSpy: FeedLoader {
         private(set) var loadCallCount: Int = 0
         
-        func load() {
+        func load(completion: @escaping (FeedLoader.Result) -> Void) {
             loadCallCount += 1
         }
     }
