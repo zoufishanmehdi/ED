@@ -11,6 +11,7 @@
 		C720DDC828F7118600805015 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDC728F7118600805015 /* UIImage+TestHelpers.swift */; };
 		C720DDCB28F7124100805015 /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDCA28F7124100805015 /* UIRefreshControl+TestHelpers.swift */; };
 		C720DDCD28F712B300805015 /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDCC28F712B300805015 /* UIButton+TestHelpers.swift */; };
+		C720DDCF28F7132A00805015 /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDCE28F7132A00805015 /* UIControl+TestHelpers.swift */; };
 		C725FD01288C909B00BA4D5B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD00288C909B00BA4D5B /* FeedItem.swift */; };
 		C725FD03288C920700BA4D5B /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD02288C920700BA4D5B /* FeedLoader.swift */; };
 		C725FD0E288EE4F700BA4D5B /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD0D288EE4F700BA4D5B /* EssentialFeedTests.swift */; };
@@ -136,6 +137,7 @@
 		C720DDC728F7118600805015 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		C720DDCA28F7124100805015 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		C720DDCC28F712B300805015 /* UIButton+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TestHelpers.swift"; sourceTree = "<group>"; };
+		C720DDCE28F7132A00805015 /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		C725FD00288C909B00BA4D5B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		C725FD02288C920700BA4D5B /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		C725FD05288EE3FC00BA4D5B /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				C720DDC728F7118600805015 /* UIImage+TestHelpers.swift */,
 				C720DDCA28F7124100805015 /* UIRefreshControl+TestHelpers.swift */,
 				C720DDCC28F712B300805015 /* UIButton+TestHelpers.swift */,
+				C720DDCE28F7132A00805015 /* UIControl+TestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -817,6 +820,7 @@
 				C720DDC828F7118600805015 /* UIImage+TestHelpers.swift in Sources */,
 				C720DDCB28F7124100805015 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				C720DDCD28F712B300805015 /* UIButton+TestHelpers.swift in Sources */,
+				C720DDCF28F7132A00805015 /* UIControl+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
