@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C70F428B28C79F7900B42573 /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F428A28C79F7900B42573 /* FeedCachePolicy.swift */; };
+		C720DDC828F7118600805015 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDC728F7118600805015 /* UIImage+TestHelpers.swift */; };
 		C725FD01288C909B00BA4D5B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD00288C909B00BA4D5B /* FeedItem.swift */; };
 		C725FD03288C920700BA4D5B /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD02288C920700BA4D5B /* FeedLoader.swift */; };
 		C725FD0E288EE4F700BA4D5B /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD0D288EE4F700BA4D5B /* EssentialFeedTests.swift */; };
@@ -130,6 +131,7 @@
 
 /* Begin PBXFileReference section */
 		C70F428A28C79F7900B42573 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
+		C720DDC728F7118600805015 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		C725FD00288C909B00BA4D5B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		C725FD02288C920700BA4D5B /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		C725FD05288EE3FC00BA4D5B /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
@@ -240,6 +242,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C720DDC928F711A400805015 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C720DDC728F7118600805015 /* UIImage+TestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C725FD04288C92DA00BA4D5B /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				C7C0E25928E4F43200F0C4B0 /* FeedViewControllerTests.swift */,
+				C720DDC928F711A400805015 /* Helpers */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -619,6 +630,7 @@
 					};
 					C7C0E24328E4D4AC00F0C4B0 = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 						TestTargetID = C79AF017287F7508000672B0;
 					};
 				};
@@ -796,6 +808,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C720DDC828F7118600805015 /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,14 +1258,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7YXV5KMMJM;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheWing.EssentialFeediOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planning.app/Planning";
@@ -1263,10 +1283,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7YXV5KMMJM;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheWing.EssentialFeediOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
