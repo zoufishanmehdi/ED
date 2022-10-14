@@ -324,7 +324,7 @@
 				C720DDD128F7145500805015 /* Views */,
 				C720DDD028F7144500805015 /* Controllers */,
 				C720DDE528F724F500805015 /* FeedUIComposer.swift */,
-				C720DDE928F73B0F00805015 /* Models */,
+				C720DDE928F73B0F00805015 /* Feed Presentation */,
 			);
 			path = "Feed UI";
 			sourceTree = "<group>";
@@ -347,13 +347,13 @@
 			path = "Feed Image Loader";
 			sourceTree = "<group>";
 		};
-		C720DDE928F73B0F00805015 /* Models */ = {
+		C720DDE928F73B0F00805015 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				C720DDE728F73AF200805015 /* FeedViewModel.swift */,
 				C720DDEA28F744CD00805015 /* FeedImageViewModel.swift */,
 			);
-			path = Models;
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		C725FD04288C92DA00BA4D5B /* Feed Feature */ = {
