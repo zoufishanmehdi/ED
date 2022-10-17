@@ -124,6 +124,7 @@ Location</string>
                         <connections>
                             <outlet property="dataSource" destination="7Qx-xM-ZUG" id="tfW-yQ-eNs"/>
                             <outlet property="delegate" destination="7Qx-xM-ZUG" id="txB-VN-EZP"/>
+                            <outlet property="prefetchDataSource" destination="7Qx-xM-ZUG" id="LBQ-7F-B6n"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Feed" id="hPr-se-5fT"/>
@@ -135,9 +136,6 @@ Location</string>
                             <action selector="refresh" destination="Wy6-Ar-gAD" eventType="valueChanged" id="nBv-hd-E9W"/>
                         </connections>
                     </refreshControl>
-                    <connections>
-                        <outlet property="refreshController" destination="Wy6-Ar-gAD" id="WPx-iE-5OI"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ne-ke-Yk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="Wy6-Ar-gAD" customClass="FeedRefreshViewController" customModule="EssentialFeediOS" customModuleProvider="target">
