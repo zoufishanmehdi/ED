@@ -131,6 +131,7 @@ Location</string>
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
+                            <action selector="refresh" destination="7Qx-xM-ZUG" eventType="valueChanged" id="7xy-zA-iCb"/>
                             <action selector="refresh" destination="Wy6-Ar-gAD" eventType="valueChanged" id="nBv-hd-E9W"/>
                         </connections>
                     </refreshControl>
