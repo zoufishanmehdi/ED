@@ -5,7 +5,7 @@
 //  Created by Zoufishan Mehdi on 10/14/22.
 //
 
-import EssentialFeed
+import Planning
 
 struct FeedViewModel {
     let feed: [FeedImage]
