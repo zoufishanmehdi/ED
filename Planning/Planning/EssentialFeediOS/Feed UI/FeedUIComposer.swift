@@ -23,22 +23,25 @@ public final class FeedUIComposer {
     }
 }
 
-private final class MainQueueDispatchDecorator: FeedLoader {
-    private let decoratee: FeedLoader
+private final class MainQueueDispatchDecorator<T> {
+    private let decoratee: T
     
-    init(decoratee: FeedLoader) {
+    init(decoratee: T) {
         self.decoratee = decoratee
     }
     
+    func dispatch(completion: @escaping() -> Void) {
+        guard Thread.isMainThread else {
+            return DispatchQueue.main.async(execute: completion)
+        }
+        completion()
+    }
+}
+
+extension MainQueueDispatchDecorator: FeedLoader where T == FeedLoader {
     func load(completion: @escaping (FeedLoader.Result) -> Void) {
-        decoratee.load { result in
-            if Thread.isMainThread {
-                completion(result)
-            } else {
-                DispatchQueue.main.async {
-                    completion(result)
-                }
-            }
+        decoratee.load { [weak self] result in
+            self?.dispatch{ completion(result) }
         }
     }
 }
@@ -46,7 +49,7 @@ private final class MainQueueDispatchDecorator: FeedLoader {
 private extension FeedViewController {
     static func makeWith(delegate: FeedViewControllerDelegate, title: String) -> FeedViewController {
         let bundle = Bundle(for: FeedViewController.self)
-        let storyboard = UIStoryboard(name: <#T##String#>, bundle: <#T##Bundle?#>)
+        let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
         let feedController = storyboard.instantiateInitialViewController() as! FeedViewController
         feedController.delegate = delegate
         feedController.title = title
