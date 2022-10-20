@@ -177,6 +177,9 @@
 		C720DE092900DA8500805015 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		C720DE0A2900DA8500805015 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		C720DE0B2900DA8500805015 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		C720DE0C2900DAC300805015 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Main.strings; sourceTree = "<group>"; };
+		C720DE0D2900DAC300805015 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C720DE0E2900DAC300805015 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		C725FD00288C909B00BA4D5B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		C725FD02288C920700BA4D5B /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		C725FD05288EE3FC00BA4D5B /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
@@ -774,6 +777,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = C79AF00F287F7508000672B0;
 			productRefGroup = C79AF019287F7508000672B0 /* Products */;
@@ -1011,6 +1015,7 @@
 			children = (
 				C720DE072900DA2200805015 /* en */,
 				C720DE0B2900DA8500805015 /* pt-BR */,
+				C720DE0E2900DAC300805015 /* el */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
@@ -1020,6 +1025,7 @@
 			children = (
 				C79AF022287F7508000672B0 /* Base */,
 				C720DE092900DA8500805015 /* pt-BR */,
+				C720DE0C2900DAC300805015 /* el */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1029,6 +1035,7 @@
 			children = (
 				C79AF027287F750B000672B0 /* Base */,
 				C720DE0A2900DA8500805015 /* pt-BR */,
+				C720DE0D2900DAC300805015 /* el */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
