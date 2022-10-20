@@ -28,8 +28,8 @@
 		C720DDF728FD90B500805015 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C720DDF628FD90B500805015 /* Feed.xcassets */; };
 		C720DDF928FDB0D800805015 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDF828FDB0D800805015 /* UITableView+Dequeueing.swift */; };
 		C720DDFB28FDB1C000805015 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDFA28FDB1C000805015 /* UIImageView+Animations.swift */; };
-		C720DE012900D58300805015 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = C720DE002900D58300805015 /* Feed.strings */; };
 		C720DE052900D7B300805015 /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DE022900D76100805015 /* FeedViewControllerTests+Localization.swift */; };
+		C720DE062900DA2200805015 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = C720DE082900DA2200805015 /* Feed.strings */; };
 		C725FD01288C909B00BA4D5B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD00288C909B00BA4D5B /* FeedItem.swift */; };
 		C725FD03288C920700BA4D5B /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD02288C920700BA4D5B /* FeedLoader.swift */; };
 		C725FD0E288EE4F700BA4D5B /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725FD0D288EE4F700BA4D5B /* EssentialFeedTests.swift */; };
@@ -172,8 +172,8 @@
 		C720DDF628FD90B500805015 /* Feed.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Feed.xcassets; sourceTree = "<group>"; };
 		C720DDF828FDB0D800805015 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 		C720DDFA28FDB1C000805015 /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
-		C720DE002900D58300805015 /* Feed.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Feed.strings; sourceTree = "<group>"; };
 		C720DE022900D76100805015 /* FeedViewControllerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Localization.swift"; sourceTree = "<group>"; };
+		C720DE072900DA2200805015 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		C725FD00288C909B00BA4D5B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		C725FD02288C920700BA4D5B /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		C725FD05288EE3FC00BA4D5B /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
@@ -375,7 +375,7 @@
 				C720DDEE28FA0EC800805015 /* FeedImagePresenter.swift */,
 				C720DDF028FA157F00805015 /* FeedViewModel.swift */,
 				C720DDF228FA15CB00805015 /* FeedLoadingViewModel.swift */,
-				C720DE002900D58300805015 /* Feed.strings */,
+				C720DE082900DA2200805015 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -832,7 +832,7 @@
 			files = (
 				C720DDF528FD902C00805015 /* Feed.storyboard in Resources */,
 				C720DDF728FD90B500805015 /* Feed.xcassets in Resources */,
-				C720DE012900D58300805015 /* Feed.strings in Resources */,
+				C720DE062900DA2200805015 /* Feed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1002,6 +1002,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C720DE082900DA2200805015 /* Feed.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C720DE072900DA2200805015 /* en */,
+			);
+			name = Feed.strings;
+			sourceTree = "<group>";
+		};
 		C79AF021287F7508000672B0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
