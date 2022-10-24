@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70A1322290730CB00956909 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A1321290730CB00956909 /* FeedPresenter.swift */; };
 		C70F428B28C79F7900B42573 /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F428A28C79F7900B42573 /* FeedCachePolicy.swift */; };
 		C720DDC828F7118600805015 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDC728F7118600805015 /* UIImage+TestHelpers.swift */; };
 		C720DDCB28F7124100805015 /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDCA28F7124100805015 /* UIRefreshControl+TestHelpers.swift */; };
@@ -158,6 +159,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C70A1321290730CB00956909 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		C70F428A28C79F7900B42573 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
 		C720DDC728F7118600805015 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		C720DDCA28F7124100805015 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
@@ -522,6 +524,7 @@
 				C79AF024287F750B000672B0 /* Assets.xcassets */,
 				C79AF026287F750B000672B0 /* LaunchScreen.storyboard */,
 				C79AF029287F750B000672B0 /* Info.plist */,
+				C70A1321290730CB00956909 /* FeedPresenter.swift */,
 			);
 			path = Planning;
 			sourceTree = "<group>";
@@ -944,6 +947,7 @@
 				C7C0E1E128D8F96000F0C4B0 /* ManagedCache.swift in Sources */,
 				C7E0094A28B4284D005C9780 /* RemoteFeedItem.swift in Sources */,
 				C70F428B28C79F7900B42573 /* FeedCachePolicy.swift in Sources */,
+				C70A1322290730CB00956909 /* FeedPresenter.swift in Sources */,
 				C725FD17288F001C00BA4D5B /* RemoteFeedLoader.swift in Sources */,
 				C79AF01E287F7508000672B0 /* SceneDelegate.swift in Sources */,
 				C7C0E1E328D8F97700F0C4B0 /* ManagedFeedImage.swift in Sources */,
