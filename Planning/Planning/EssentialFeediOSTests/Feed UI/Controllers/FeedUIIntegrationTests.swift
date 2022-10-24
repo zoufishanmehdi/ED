@@ -5,9 +5,9 @@
 //  Created by Zoufishan Mehdi on 9/28/22.
 //
 
+import Foundation
 import XCTest
 import Planning
-import EssentialFeediOS
 
 final class FeedUIIntegrationTests: XCTestCase {
     
