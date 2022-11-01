@@ -15,7 +15,7 @@ protocol FeedImageCellControllerDelegate {
 
 final class FeedImageCellController: FeedImageView {
     private let delegate: FeedImageCellControllerDelegate
-    private lazy var cell: FeedImageCell?
+    private var cell: FeedImageCell?
     
     init(delegate: FeedImageCellControllerDelegate) {
         self.delegate = delegate

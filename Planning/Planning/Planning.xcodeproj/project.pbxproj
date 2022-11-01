@@ -26,9 +26,7 @@
 		C720DDDF28F71CBD00805015 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDDE28F71CBD00805015 /* FeedImageDataLoader.swift */; };
 		C720DDE428F71F9600805015 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDE328F71F9600805015 /* FeedImageCellController.swift */; };
 		C720DDE628F724F500805015 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDE528F724F500805015 /* FeedUIComposer.swift */; };
-		C720DDEB28F744CD00805015 /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDEA28F744CD00805015 /* FeedImageViewModel.swift */; };
 		C720DDED28F9D6DB00805015 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDEC28F9D6DB00805015 /* FeedPresenter.swift */; };
-		C720DDEF28FA0EC800805015 /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDEE28FA0EC800805015 /* FeedImagePresenter.swift */; };
 		C720DDF128FA157F00805015 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDF028FA157F00805015 /* FeedViewModel.swift */; };
 		C720DDF328FA15CB00805015 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720DDF228FA15CB00805015 /* FeedLoadingViewModel.swift */; };
 		C720DDF528FD902C00805015 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C720DDF428FD902C00805015 /* Feed.storyboard */; };
@@ -184,9 +182,7 @@
 		C720DDDE28F71CBD00805015 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		C720DDE328F71F9600805015 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 		C720DDE528F724F500805015 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
-		C720DDEA28F744CD00805015 /* FeedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModel.swift; sourceTree = "<group>"; };
 		C720DDEC28F9D6DB00805015 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
-		C720DDEE28FA0EC800805015 /* FeedImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenter.swift; sourceTree = "<group>"; };
 		C720DDF028FA157F00805015 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		C720DDF228FA15CB00805015 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 		C720DDF428FD902C00805015 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
@@ -429,9 +425,7 @@
 		C720DDE928F73B0F00805015 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				C720DDEA28F744CD00805015 /* FeedImageViewModel.swift */,
 				C720DDEC28F9D6DB00805015 /* FeedPresenter.swift */,
-				C720DDEE28FA0EC800805015 /* FeedImagePresenter.swift */,
 				C720DDF028FA157F00805015 /* FeedViewModel.swift */,
 				C720DDF228FA15CB00805015 /* FeedLoadingViewModel.swift */,
 				C720DE082900DA2200805015 /* Feed.strings */,
@@ -1025,8 +1019,6 @@
 				C720DDF928FDB0D800805015 /* UITableView+Dequeueing.swift in Sources */,
 				C720DDF328FA15CB00805015 /* FeedLoadingViewModel.swift in Sources */,
 				C720DDFB28FDB1C000805015 /* UIImageView+Animations.swift in Sources */,
-				C720DDEB28F744CD00805015 /* FeedImageViewModel.swift in Sources */,
-				C720DDEF28FA0EC800805015 /* FeedImagePresenter.swift in Sources */,
 				C720DDE428F71F9600805015 /* FeedImageCellController.swift in Sources */,
 				C7C0E26128EB8FC300F0C4B0 /* UIView+Shimmering.swift in Sources */,
 				C720DE192902FCBD00805015 /* FeedLoaderPresentationAdapter.swift in Sources */,
